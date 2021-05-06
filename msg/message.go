@@ -22,6 +22,7 @@ func (n Nonce) Big() *big.Int {
 	return big.NewInt(int64(n))
 }
 
+var NativeTransfer TransferType = "NativeTransfer"
 var FungibleTransfer TransferType = "FungibleTransfer"
 var NonFungibleTransfer TransferType = "NonFungibleTransfer"
 var GenericTransfer TransferType = "GenericTransfer"
@@ -34,6 +35,20 @@ type Message struct {
 	DepositNonce Nonce        // Nonce for the deposit
 	ResourceId   ResourceId
 	Payload      []interface{} // data associated with event sequence
+}
+
+func NewNativeTransfer(source, dest ChainId, nonce Nonce, amount *big.Int, resourceId ResourceId, recipient []byte) Message {
+	return Message{
+		Source:       source,
+		Destination:  dest,
+		Type:         NativeTransfer,
+		DepositNonce: nonce,
+		ResourceId:   resourceId,
+		Payload: []interface{}{
+			amount.Bytes(),
+			recipient,
+		},
+	}
 }
 
 func NewFungibleTransfer(source, dest ChainId, nonce Nonce, amount *big.Int, resourceId ResourceId, recipient []byte) Message {
