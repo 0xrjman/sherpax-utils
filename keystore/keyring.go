@@ -5,9 +5,10 @@ package keystore
 
 import (
 	"fmt"
-	"github.com/rjman-self/platdot-utils/crypto"
-	"github.com/rjman-self/platdot-utils/crypto/secp256k1"
-	"github.com/rjman-self/platdot-utils/crypto/sr25519"
+
+	"github.com/rjman-self/sherpax-utils/crypto"
+	"github.com/rjman-self/sherpax-utils/crypto/secp256k1"
+	"github.com/rjman-self/sherpax-utils/crypto/sr25519"
 	"github.com/rjmand/go-substrate-rpc-client/v2/signature"
 )
 

@@ -11,8 +11,8 @@ import (
 	"path"
 	"time"
 
-	"github.com/rjman-self/platdot-utils/core"
-	"github.com/rjman-self/platdot-utils/msg"
+	"github.com/rjman-self/sherpax-utils/core"
+	"github.com/rjman-self/sherpax-utils/msg"
 	log "github.com/ChainSafe/log15"
 )
 

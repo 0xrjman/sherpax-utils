@@ -1,4 +1,4 @@
-module github.com/rjman-self/platdot-utils
+module github.com/rjman-self/sherpax-utils
 
 go 1.13
 

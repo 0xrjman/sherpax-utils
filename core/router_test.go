@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rjman-self/platdot-utils/msg"
 	"github.com/ChainSafe/log15"
+	"github.com/rjman-self/sherpax-utils/msg"
 )
 
 type mockWriter struct {

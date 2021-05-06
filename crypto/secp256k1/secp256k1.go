@@ -6,10 +6,10 @@ package secp256k1
 import (
 	"crypto/ecdsa"
 
-	"github.com/rjman-self/platdot-utils/crypto"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	secp256k1 "github.com/ethereum/go-ethereum/crypto"
+	"github.com/rjman-self/sherpax-utils/crypto"
 )
 
 var _ crypto.Keypair = &Keypair{}

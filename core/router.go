@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/rjman-self/platdot-utils/msg"
 	log "github.com/ChainSafe/log15"
+	"github.com/rjman-self/sherpax-utils/msg"
 )
 
 // Writer consumes a message and makes the requried on-chain interactions.
