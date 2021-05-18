@@ -11,8 +11,8 @@ import (
 	"path"
 	"time"
 
-	"github.com/rjman-self/sherpax-utils/core"
-	"github.com/rjman-self/sherpax-utils/msg"
+	"github.com/rjman-ljm/sherpax-utils/core"
+	"github.com/rjman-ljm/sherpax-utils/msg"
 	log "github.com/ChainSafe/log15"
 )
 

@@ -29,7 +29,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/rjman-self/sherpax-utils/crypto"
+	"github.com/rjman-ljm/sherpax-utils/crypto"
 )
 
 const EnvPassword = "KEYSTORE_PASSWORD"

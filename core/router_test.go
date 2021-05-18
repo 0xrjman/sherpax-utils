@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/ChainSafe/log15"
-	"github.com/rjman-self/sherpax-utils/msg"
+	"github.com/rjman-ljm/sherpax-utils/msg"
 )
 
 type mockWriter struct {

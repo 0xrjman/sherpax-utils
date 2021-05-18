@@ -4,8 +4,8 @@
 package core
 
 import (
-	metrics "github.com/rjman-self/sherpax-utils/metrics/types"
-	"github.com/rjman-self/sherpax-utils/msg"
+	metrics "github.com/rjman-ljm/sherpax-utils/metrics/types"
+	"github.com/rjman-ljm/sherpax-utils/msg"
 )
 
 type Chain interface {

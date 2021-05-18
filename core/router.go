@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	log "github.com/ChainSafe/log15"
-	"github.com/rjman-self/sherpax-utils/msg"
+	"github.com/rjman-ljm/sherpax-utils/msg"
 )
 
 // Writer consumes a message and makes the requried on-chain interactions.
