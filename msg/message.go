@@ -23,7 +23,10 @@ func (n Nonce) Big() *big.Int {
 }
 
 var NativeTransfer TransferType = "NativeTransfer"
+
+var Erc20TokenTransfer TransferType = "Erc20TokenTransfer"
 var FungibleTransfer TransferType = "FungibleTransfer"
+
 var NonFungibleTransfer TransferType = "NonFungibleTransfer"
 var GenericTransfer TransferType = "GenericTransfer"
 
@@ -42,6 +45,20 @@ func NewNativeTransfer(source, dest ChainId, nonce Nonce, amount *big.Int, resou
 		Source:       source,
 		Destination:  dest,
 		Type:         NativeTransfer,
+		DepositNonce: nonce,
+		ResourceId:   resourceId,
+		Payload: []interface{}{
+			amount.Bytes(),
+			recipient,
+		},
+	}
+}
+
+func NewErc20TokenTransfer(source, dest ChainId, nonce Nonce, amount *big.Int, resourceId ResourceId, recipient []byte) Message {
+	return Message{
+		Source:       source,
+		Destination:  dest,
+		Type:         Erc20TokenTransfer,
 		DepositNonce: nonce,
 		ResourceId:   resourceId,
 		Payload: []interface{}{
